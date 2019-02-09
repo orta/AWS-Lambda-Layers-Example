@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build:function": "rm dist/function.zip; cd app; zip ../dist/function.zip index.js; cd ..",
+    "build:layer": "rm dist/layer.zip; cd layer; zip ../dist/layer.zip -r *; cd ..",
+    "deploy:function": "aws lambda update-function-code --function-name helloworld --zip-file fileb://./dist/function.zip  --profile peril",
+    "deploy:layer": "aws lambda publish-layer-version --layer-name underscore-runtime --zip-file fileb://dist/layer.zip --profile peril"
+  }
+}

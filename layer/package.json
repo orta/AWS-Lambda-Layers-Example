@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "danger": "^7.0.10",
+    "underscore": "^1.9.1"
+  }
+}
