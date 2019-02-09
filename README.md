@@ -2,6 +2,7 @@
 
 Docs: https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html
 
+Aim: Make a lambda whose job is to just call code from the layer
 
 ```sh
 brew bundle
@@ -10,7 +11,7 @@ cd layer; yarn install; cd ..
 ```
 
 Set up the Peril aws cli env (make sure to set the region)
-git s
+
 ```sh 
 aws configure --profile peril
 
