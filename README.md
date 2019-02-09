@@ -62,6 +62,13 @@ Invoke it:
 aws lambda invoke --function-name helloworld dist/output.log --profile peril
 ```
 
+---
+
+From there, any updates to the layers will need to be re-applied to the functions. This is kinda cool,
+because in theory different folks could have different Peril runtimes.
+
+---
+
 You should be able to see:
 
 - Layers: https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/layers
